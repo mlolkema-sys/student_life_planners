@@ -2,11 +2,15 @@ from bakery import assert_equal
 from drafter import *
 from dataclasses import dataclass
 
-
-
 hide_debug_information()
 set_website_title("Your Drafter Website")
 set_website_framed(False)
+set_site_information(author="Marissa Lolkema",
+                     description="Final project submission for a student panning site that is meant to maximize time usage and balance of all activities", 
+                     sources="Utilized ChatGPT as shown in Conversations with AI", 
+                     planning= ["Copy of CSI Final Project 0_Pick a Problem(1)", "Copy of CSI Final Project 1_Design"],
+                     links= ["https://mlolkema-sys.github.io/student_life_planners/?route=focus_timer"], 
+                     server=None)
 
 @dataclass
 class Task:
